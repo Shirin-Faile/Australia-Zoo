@@ -1,0 +1,26 @@
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .welcome-text {
+    margin-bottom: 20px;
+  }
+  
+  .zoo-image-container {
+    width: 100%;
+  }
+  
+  .zoo-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+  
+  @media (min-width: 768px) {
+    .zoo-image {
+      max-width: 50%;
+    }
+  }
