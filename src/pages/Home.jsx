@@ -1,12 +1,8 @@
 import React from "react";
+import Header from "../components/Header";
 
-const Home = () => {
-    return (
-        <div>
-            <h2>Welcome to Australia Zoo</h2>
-            <p>Discover the amazing animals of Australia!</p>
-        </div>
-    );
-}
+const Home = ({ title }) => {
+    return <Header pageTitle={title}/>;
+};
 
 export default Home;
