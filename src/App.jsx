@@ -1,5 +1,5 @@
 import {useState} from "react";
-import {Routes, Route, Link} from 'react-router-dom'
+import {Routes, Route, NavLink} from 'react-router-dom'
 import Home from './pages/Home'
 import Birds from './pages/Birds';
 import Mammals from './pages/Mammals';
@@ -11,13 +11,13 @@ function App() {
     return (
         <>
         <nav>
-            <Link to="/">Home Page</Link>
-            <Link to="Birds">Birds</Link>
-            <Link to="Mammals">Mammals</Link>
-            <Link to="Reptiles">Reptiles</Link>
+            <NavLink to="/">Home</NavLink>
+            <NavLink to="Birds">Birds</NavLink>
+            <NavLink to="Mammals">Mammals</NavLink>
+            <NavLink to="Reptiles">Reptiles</NavLink>
         </nav>
             <Routes>
-                <Route path="/" element={<Home title="Home Page" />} />
+                <Route path="/" element={<Home title="Animals" />} />
                 <Route path="Birds" element={<Home title="Birds" />} />
                 <Route path="Mammals" element={<Home title="Mammals" />} />
                 <Route path="Reptiles" element={<Home title="Reptiles" />} />

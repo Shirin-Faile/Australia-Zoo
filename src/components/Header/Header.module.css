@@ -9,3 +9,8 @@
     margin: 0;
     color: #333333;
 }
+
+.logo {
+    width: 100px;
+    height: auto;
+}
