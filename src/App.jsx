@@ -1,9 +1,12 @@
 import {useState} from "react";
 import {Routes, Route, NavLink} from 'react-router-dom'
 import Home from './pages/Home'
-import Birds from './pages/Birds';
-import Mammals from './pages/Mammals';
-import Reptiles from './pages/Reptiles';
+import MainBirds from "./components/Birdspage";
+import { birds } from "./data/birds"
+import MainMammals from "./components/Mammalspage";
+import { mammals } from "./data/mammals";
+import MainReptiles from "./components/Reptilespage";
+import { reptiles } from "./data/reptiles";
 import Footer from "./components/Footer";
 import './App.css';
 
@@ -18,9 +21,9 @@ function App() {
         </nav>
             <Routes>
                 <Route path="/" element={<Home title="Animals" />} />
-                <Route path="Birds" element={<Home title="Birds" />} />
-                <Route path="Mammals" element={<Home title="Mammals" />} />
-                <Route path="Reptiles" element={<Home title="Reptiles" />} />
+                <Route path="Birds" element={<MainBirds birds={birds} />} />
+                <Route path="Mammals" element={<MainMammals mammals={mammals} />} />
+                <Route path="Reptiles" element={<MainReptiles reptiles={reptiles} />} />
             </Routes>
             <Footer/>
         </>
