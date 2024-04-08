@@ -1,12 +1,10 @@
 import React from "react";
-import Header from "../components/Header";
 import styles from "../components/Home/Home.module.css";
 import zooImage from "/src/assets/zoo.png"
 
-const Home = ({ title }) => {
+const Home = () => {
     return (
         <>
-            <Header pageTitle={title}/>;
             <div className={styles["welcome-container"]}>
                 <div className={styles["welcome-text"]}>
                     <h2>Welcome to Australia Zoo</h2>
