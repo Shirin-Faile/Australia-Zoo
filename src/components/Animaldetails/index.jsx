@@ -22,9 +22,9 @@ const AnimalDetails = ({ animal, onClose }) => {
 
 const getGroupLink = (groupName) => {
   const groupUrls = {
-    Bird: "/birds",
+    Birds: "/birds",
     Mammals: "/mammals",
-    Reptile: "/reptiles"
+    Reptiles: "/reptiles"
   };
   return groupUrls[groupName] || "/";
 };
