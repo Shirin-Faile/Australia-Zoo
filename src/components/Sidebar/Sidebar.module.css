@@ -1,3 +1,4 @@
+
 .sidebar {
   width: 250px;
   background-color: #ffffff;
@@ -42,6 +43,13 @@
   font-size: 1.2rem;
   color: #444444;
 }
+
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+}
+
 
 
   
