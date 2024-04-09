@@ -6,6 +6,15 @@
     margin: 0;
   }
 
+  .container {
+    display: flex;
+  }
+
+  .main-content {
+    flex: 1;
+    margin-right: 150px;
+  }
+
 nav {
   background-color: #333;
   padding: 10px 0;

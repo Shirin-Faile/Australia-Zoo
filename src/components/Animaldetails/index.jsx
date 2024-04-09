@@ -3,6 +3,9 @@ import styles from './Animaldetails.module.css';
 import { Link } from "react-router-dom";
 
 const AnimalDetails = ({ animal, onClose }) => {
+  const handleGroupClick = () => {
+    onClose();
+  }
     return (
         <div className={styles['animal-details']}>
             <button onClick={onClose}>Close</button>
@@ -11,7 +14,7 @@ const AnimalDetails = ({ animal, onClose }) => {
             <p>{animal.summary}</p>
             <p>
                 Group:{" "}
-                <Link to={getGroupLink(animal.group)}>{animal.group}</Link>
+                <Link to={getGroupLink(animal.group)} onClick={handleGroupClick}>{animal.group}</Link>
             </p>
         </div>
   );
